@@ -1,0 +1,47 @@
+/* this is a CSS comment */
+/* this is EXTERNAL CSS which is linked to all HMTL files for the website*/
+  body {
+    /* colors can be done with names, hex values (as below), rgb etc */
+    /* background-color: #292d34; */
+    background-color: #282C34; /* hex value */
+    /* FONTS NEED TO BE WEB SAFE */
+    /* font-family: Tahoma, Verdana, sans-serif */
+    /* font-family: Helvetica, sans-serif */
+    /* found these fonts by inspecting garmin connect */
+    /* font-family: 'Open Sans', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+  }
+
+  /* you can refer to ALL selectors and multiple selectors at once */
+  /* you can lay it out one one line eg if you only want to style a single property of many selectors */
+  /* h1, h3 {color: #3D84B8;} */
+  h1, h3 {color: #c16266;}
+
+  /* if you want the contact h3 to be a different color to the other h3s, use a class or ID selector */
+  /* or use inline CSS instead which would overide this external CSS*/
+  /* class selector (preferred)... */
+  .contact{color: #c16266;}
+  /* ID selector */
+  /* #contact{color: #red;} */
+
+  p, td, li, label, input {color: #9da39d;}
+
+  /* best to lay out like this if you want to set MANY properties, though you can do it all on one-line (inline)*/
+  /* best practice is alphbetical order */
+  hr {
+    border-color:#9da39d;
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 5px;
+    width:5%;
+  }
+
+  /* applies a circular border around a picture */
+  img{
+    border-radius: 100%;
+  }
+
+  /* when you hover the mouse over the element */
+  h3:hover {
+    color:white
+  }
